@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>{% block head_title %}{% endblock %}Test Blog</title>
+  </head>
+  <body>
+  {% include "navbar1.html" %}
+  {% include "navbar.html" %}
+
+  <div class="container-fluid">
+      <div class="pt-3">
+          {% block content %}
+            Replace me
+          {% endblock %}
+      </div>
+  </div>
+
+  <footer class="py-3 bg-grey">
+    <p class="m-0 text-dark text-center ">The site was created by a student Y. Vadeika</p>
+  </footer>
+   {% include "js.html" %}
+  </body>
+</html>
